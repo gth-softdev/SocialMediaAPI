@@ -58,11 +58,11 @@ namespace SocialMedia.Services
                 var entity =
                     ctx
                         .Posts
-                        .Single(e => e.PostId == id);
+                        .Single(e => e.Id == id);
                 return
                     new Post
                     {
-                        PostId = entity.PostId,
+                        Id = entity.Id,
                         Title = entity.Title,
                         Text = entity.Text,
                         //CreatedUtc = entity.CreatedUtc,
@@ -72,4 +72,4 @@ namespace SocialMedia.Services
         }
     }
 }
-}
+
