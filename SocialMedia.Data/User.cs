@@ -23,6 +23,7 @@ namespace SocialMedia.Data
             get
             {
                 return $"{FirstName} {LastName}";
+
             }
         }
     }
