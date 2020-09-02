@@ -1,4 +1,5 @@
-﻿using SocialMedia.Models;
+﻿using Microsoft.AspNet.Identity;
+using SocialMedia.Models;
 using SocialMedia.Services;
 using System;
 using System.Collections.Generic;
