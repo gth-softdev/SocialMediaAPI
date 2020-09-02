@@ -20,6 +20,6 @@ namespace SocialMedia.Data
         public User Author { get; set; }
 
         [Required]
-        public Post CommentPost { get; set; }
+        public int CommentPostId { get; set; }
     }
 }
