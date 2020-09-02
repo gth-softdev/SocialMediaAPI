@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.Data
 {
-    class User
+  public class User
     {
         [Key]
         public Guid Id { get; set; }

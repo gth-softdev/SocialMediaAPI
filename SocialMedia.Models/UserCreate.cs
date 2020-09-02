@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.Models
 {
-    class UserCreate
+    public class UserCreate
     {
         [Required]
         public string FirstName { get; set; }
