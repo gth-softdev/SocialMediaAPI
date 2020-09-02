@@ -37,6 +37,5 @@ namespace SocialMediaAssignment.Controllers
         {
         }
 
-        //KL
     }
 }
