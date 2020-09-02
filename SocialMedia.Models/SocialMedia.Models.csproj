@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="PostListItem.cs" />
     <Compile Include="CommentCreate.cs" />
     <Compile Include="CommentListItem.cs" />
     <Compile Include="PostCreate.cs" />
