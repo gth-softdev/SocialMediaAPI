@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using SocialMediaAssignment.Providers;
 using SocialMediaAssignment.Models;
+using SocialMedia.Data;
 
 namespace SocialMediaAssignment
 {
