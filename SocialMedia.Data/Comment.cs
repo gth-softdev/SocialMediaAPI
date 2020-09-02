@@ -11,7 +11,7 @@ namespace SocialMedia.Data
     public class Comment
     {
         [Key]
-        public int Id { get; set; }
+        public int CommentId { get; set; }
 
         [Required]
         public string Text { get; set; }
