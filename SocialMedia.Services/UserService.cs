@@ -29,14 +29,14 @@ namespace SocialMedia.Services
                     LastName = model.LastName,
                     Email = _email
                 };
-            using (var ctx = new ApplicationDbContext())
+            using (var dbSet = new ApplicationDbContext())
             {
-                foreach (User user in ctx.Users)
+                foreach (User user in dbSet.Users)
                     if (user.Id == entity.Id)
                         return false;
 
-                ctx.Users.Add(entity);
-                return ctx.SaveChanges() == 1;
+                dbSet.Users.Add(entity);
+                return dbSet.SaveChanges() == 1;
             }
 
 
