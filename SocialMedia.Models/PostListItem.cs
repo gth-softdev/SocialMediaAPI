@@ -9,7 +9,7 @@ namespace SocialMedia.Models
 {
     public class PostListItem
     {
-        public int NoteId { get; set; }
+        public int PostId { get; set; }
         public string Title { get; set; }
 
         
