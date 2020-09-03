@@ -20,15 +20,16 @@ namespace SocialMedia.Services
             var entity =
                 new Post()
                 {
-
-                    //Author = _userId,
+                    
+                    Id = model.PostId,
                     Title = model.Title,
                     Text = model.Text,
                 };
             using (var ctx = new ApplicationDbContext())
             {
+                entity.Author = ctx.Users.Where(e => e.Id == _userId).First();
                 ctx.Posts.Add(entity);
-                return ctx.SaveChanges() == 1;
+                return ctx.SaveChanges() == 2;
             }
         }
         public IEnumerable<PostListItem> GetPosts()
@@ -38,12 +39,12 @@ namespace SocialMedia.Services
                 var query =
                     ctx
                         .Posts
-                        //.Where(e => e.Author == _userId)
+                        .Where(e => e.Author.Id == _userId)
                         .Select(
                             e =>
                                 new PostListItem
                                 {
-                                    //PostId = e.PostId,
+                                    PostId = e.Id,
                                     Title = e.Title,
 
                                 }
